@@ -37,7 +37,7 @@ export default function BrandsSection() {
         {brands.map((brand, i) => (
           <div
             key={i}
-            className='relative mx-auto h-12 w-28 grayscale transition hover:scale-105 hover:grayscale-0'
+            className='relative mx-auto h-12 w-28 transition hover:scale-130'
           >
             <Image
               src={brand.src}
