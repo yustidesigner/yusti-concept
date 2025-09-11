@@ -2,44 +2,40 @@
 
 export default function DemasiadoCuriosa() {
   return (
-    <section className="flex justify-center items-center min-h-[540px] py-12 px-2 bg-white">
-      <div className="bg-[#392200] rounded-3xl w-full max-w-6xl p-8 md:p-16 flex flex-col md:flex-row gap-10">
+    <section className='flex min-h-[540px] items-center justify-center bg-white px-2 py-12'>
+      <div className='flex w-full max-w-6xl flex-col gap-10 rounded-3xl bg-[#392200] p-8 md:flex-row md:p-16'>
         {/* Texto */}
-        <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight">
+        <div className='flex flex-1 flex-col justify-center'>
+          <h2 className='text-3xl leading-tight font-bold text-white md:text-4xl'>
             Demasiado
             <br />
             curiosa
           </h2>
-          <p className="mt-6 text-white text-lg">
-            como para hacer <span className="font-bold">una sola cosa</span>,
-            <br />
-            es por eso que <span className="font-bold">domino:</span>
+          <p className='mt-6 text-lg text-white'>
+            Como para hacer{' '}
+            <span className='font-bold'>
+              una <br /> sola cosa
+            </span>
+            , es por eso <br /> que <span className='font-bold'>domino:</span>
           </p>
-          <a
-            href="#"
-            className="inline-block mt-8 bg-dark-coffee text-coffee font-bold rounded-md px-8 py-3 text-base hover:bg-dark-coffee hover:text-white transition"
-          >
-            CURRICULUM VITAE
-          </a>
         </div>
 
         {/* Cuadricula */}
-        <div className="flex-1 grid grid-cols-2 gap-6">
-          <div className="rounded-2xl bg-twine h-32 md:h-40 flex items-center justify-center text-dark-coffee font-bold text-xl md:text-2xl text-center">
+        <div className='grid flex-1 grid-cols-2 gap-6'>
+          <div className='bg-c1 text-dark-coffee flex h-32 items-center justify-center rounded-2xl text-center text-xl md:h-60 md:text-2xl'>
             Branding
           </div>
-          <div className="rounded-2xl bg-twine h-32 md:h-40 flex items-center justify-center text-dark-coffee font-bold text-xl md:text-2xl text-center">
+          <div className='bg-c2 text-dark-coffee flex h-32 items-center justify-center rounded-2xl text-center text-xl md:h-60 md:text-2xl'>
             Fotografía
           </div>
-          <div className="rounded-2xl bg-twine h-32 md:h-40 flex items-center justify-center text-dark-coffee font-bold text-xl md:text-2xl text-center">
+          <div className='bg-c3 flex h-32 items-center justify-center rounded-2xl text-center text-xl text-white md:h-60 md:text-2xl'>
             Social media
           </div>
-          <div className="rounded-2xl bg-twine h-32 md:h-40 flex items-center justify-center text-dark-coffee font-bold text-xl md:text-2xl text-center">
+          <div className='bg-c4 flex h-32 items-center justify-center rounded-2xl text-center text-xl text-white md:h-60 md:text-2xl'>
             Editorial
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

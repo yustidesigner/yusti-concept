@@ -1,10 +1,18 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-*: initial;
   --color-white: #fff;
   --color-coffee: #301e00;
   --color-dark-coffee: #845400;
-  --color-twine: #f9f5ee;
+  --color-twine: #ffe5bf;
   --color-black: #000;
+  --color-c1: #ffc050;
+  --color-c2: #e39a19;
+  --color-c3: #6c4603;
+  --color-c4: #a66a00;
+}
+
+html {
+  scroll-behavior: smooth;
 }

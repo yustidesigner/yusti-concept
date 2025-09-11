@@ -1,13 +1,35 @@
-import SoftSkills from "@/components/SoftSkills";
-import DemasiadoCuriosa from "@/components/DemasiadoCuriosa";
-import Contacto from "@/components/Contacto";
+'use client'
+
+import { useEffect } from 'react'
+import SoftSkills from '@/components/SoftSkills'
+import DemasiadoCuriosa from '@/components/DemasiadoCuriosa'
+import IntroCard from '@/components/IntroCard'
+import DetailLoverSection from '@/components/DetailLoverSection'
+import PhotographyCard from '@/components/PhotographyCard'
+import BrandsSection from '@/components/BrandsSection'
 
 export default function Page() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const id = window.location.hash.replace('#', '')
+      const el = document.getElementById(id)
+
+      if (el) {
+        // Esperar a que todo cargue
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      }
+    }
+  }, [])
   return (
-    <div>
-      <SoftSkills />
+    <main>
+      <BrandsSection />
+      <IntroCard />
       <DemasiadoCuriosa />
-      <Contacto />
-    </div>
-  );
+      <SoftSkills />
+      <DetailLoverSection />
+      <PhotographyCard />
+    </main>
+  )
 }
