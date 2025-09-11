@@ -2,46 +2,41 @@
 
 export default function SoftSkills() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="text-center">
-        <h2 className="text-6xl md:text-7xl font-bold text-dark-coffee leading-tight">
-          Soft
-          <br />
-          Skills
+    <section className='bg-white px-4 py-16'>
+      <div className='text-center'>
+        <h2 className='text-dark-coffee text-6xl leading-tight font-bold md:text-7xl'>
+          Soft Skills
         </h2>
-        <p className="mt-4 text-2xl text-dark-coffee">
+        <p className='text-dark-coffee mt-4 text-2xl'>
           que forman parte de quien soy
         </p>
       </div>
 
-      <div className="mt-20 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="flex flex-col space-y-6">
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
-            Pensamiento creativo
-          </div>
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
+      <div className='mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2'>
+        <div className='flex flex-col space-y-6'>
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
             Pensamiento estratégico
           </div>
-        </div>
-
-        <div className="flex flex-col space-y-6">
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
             Atención al detalle
           </div>
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
             Adaptabilidad
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
+        <div className='flex flex-col space-y-6'>
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+            Pensamiento creativo
+          </div>
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
             Escucha activa
           </div>
-          <div className="bg-twine text-dark-coffee rounded-xl py-6 text-xl font-medium text-center">
+          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
             Comunicación efectiva
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
