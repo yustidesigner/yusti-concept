@@ -11,7 +11,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <header className='relative z-50 w-full bg-white px-6 py-4 shadow-md md:px-12'>
+    <header className='relative z-10 w-full bg-transparent px-6 py-4 md:px-12'>
       <div className='mx-auto flex max-w-7xl items-center justify-between'>
         {/* Logo */}
         <Link href='/'>

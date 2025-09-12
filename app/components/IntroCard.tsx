@@ -11,7 +11,7 @@ export default function IntroCard() {
           <h1 className='text-dark-coffee text-6xl font-extrabold'>¡HOLA!</h1>
           <p className='my-12 mr-6 text-justify text-base leading-relaxed text-gray-800 md:text-xl'>
             Me llamo <strong className='text-c4'>Yangely Yusti</strong> y soy
-            Diseñador Gráfico con <strong className='text-c4'> +6 años</strong>{' '}
+            Diseñador Gráfico con <strong className='text-c4'>+6 años</strong>{' '}
             <strong>de experiencia</strong>, he desempeñado mi rol en diferentes
             áreas lo cual me hace tener la habilidad de ser una{' '}
             <strong>diseñadora integral</strong>.
@@ -20,9 +20,9 @@ export default function IntroCard() {
           {/* Botón de descarga */}
           <div className='mt-6'>
             <a
-              href='/pdfs/Yangely Yusti Villegas Diseñador Gráfico.pdf' // coloca aquí el nombre real de tu PDF en /public
+              href='/pdfs/Yangely-Yusti-CV.pdf'
               download
-              className='bg-dark-coffee rounded-xl px-12 py-3 font-semibold text-white transition duration-300 hover:bg-black'
+              className='bg-dark-coffee inline-block rounded-xl px-12 py-3 font-semibold text-white transition duration-300 hover:bg-black'
             >
               CURRICULUM VITAE
             </a>
