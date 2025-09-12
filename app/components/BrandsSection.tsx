@@ -27,9 +27,8 @@ export default function BrandsSection() {
       </div>
 
       {/* Título marcas */}
-      <h3 className='mt-20 text-lg tracking-wide text-gray-800 md:text-3xl'>
-        MARCAS QUE{' '}
-        <span className='text-dark-coffee font-bold'>CONFIARON EN MI</span>
+      <h3 className='mt-20 text-lg font-light tracking-wide text-gray-800 md:text-3xl'>
+        Experiencias <span className='text-dark-coffee'>con marcas como</span>
       </h3>
 
       {/* Logos */}
