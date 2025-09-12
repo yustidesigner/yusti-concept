@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function PhotographyShowcase() {
   return (
@@ -23,21 +24,21 @@ export default function PhotographyShowcase() {
               {/* Izquierda alta (2 filas) */}
               <Tile
                 src='/images/landing/ff1.png'
-                alt='Fans Coffee & Bakery'
+                alt='fans'
                 className='row-span-2'
               />
 
               {/* Derecha arriba */}
-              <Tile src='/images/landing/ff2.png' alt='María Croquetas' />
+              <Tile src='/images/landing/ff2.png' alt='croquetas' />
 
               {/* Derecha medio */}
-              <Tile src='/images/landing/ff3.png' alt='Capanes 55' />
+              <Tile src='/images/landing/ff3.png' alt='capanes' />
 
               {/* Abajo izquierda */}
-              <Tile src='/images/landing/ff4.png' alt='Hi! Bröd Coffee' />
+              <Tile src='/images/landing/ff4.png' alt='hi' />
 
               {/* Abajo derecha */}
-              <Tile src='/images/landing/ff5.png' alt='Binome' />
+              <Tile src='/images/landing/ff5.png' alt='binome' />
             </div>
           </div>
         </div>
@@ -60,14 +61,16 @@ function Tile({
     <div
       className={`group relative overflow-hidden rounded-[18px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] ${className}`}
     >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        sizes='(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw'
-        className='object-cover transition-transform duration-500 group-hover:scale-105'
-        priority={false}
-      />
+      <Link href={alt}>
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes='(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw'
+          className='object-cover transition-transform duration-500 group-hover:scale-105'
+          priority={false}
+        />
+      </Link>
     </div>
   )
 }

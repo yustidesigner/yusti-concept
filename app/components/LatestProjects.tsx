@@ -1,12 +1,17 @@
 'use client'
 
+import Link from 'next/link'
 import Image from 'next/image'
 
 const projects = [
-  { src: '/images/landing/kloeh-logo.jpg', alt: 'Kloeh' },
-  { src: '/images/landing/niria-sojo-studio.png', alt: 'Niria Sojo' },
-  { src: '/images/landing/deleite.png', alt: 'Deleite' },
-  { src: '/images/landing/lanai-natural.png', alt: 'Lanai' }
+  { src: '/images/landing/kloeh-logo.jpg', alt: 'Kloeh', link: 'kloeh' },
+  {
+    src: '/images/landing/niria-sojo-studio.png',
+    alt: 'Niria Sojo',
+    link: 'niria'
+  },
+  { src: '/images/landing/deleite.png', alt: 'Deleite', link: 'deleite' },
+  { src: '/images/landing/lanai-natural.png', alt: 'Lanai', link: 'lanai' }
 ]
 
 export default function LatestProjects() {
@@ -32,17 +37,19 @@ export default function LatestProjects() {
         <div className='mt-8 rounded-[22px] bg-white p-4 md:p-6'>
           <div className='grid grid-cols-2 gap-4 md:gap-6'>
             {projects.map((project, i) => (
-              <div
-                key={i}
-                className='group relative aspect-[4/3] overflow-hidden rounded-xl shadow-md'
-              >
-                <Image
-                  src={project.src}
-                  alt={project.alt}
-                  fill
-                  className='object-cover transition-transform duration-500 group-hover:scale-105'
-                />
-              </div>
+              <Link href={project.link} key={i}>
+                <div
+                  key={i}
+                  className='group relative aspect-[4/3] overflow-hidden rounded-xl shadow-md'
+                >
+                  <Image
+                    src={project.src}
+                    alt={project.alt}
+                    fill
+                    className='object-cover transition-transform duration-500 group-hover:scale-105'
+                  />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
