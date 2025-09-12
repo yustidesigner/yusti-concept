@@ -5,7 +5,10 @@ import FullBackgroundHero from '@/components/FullBackgroundHero'
 export default function Kloeh() {
   return (
     <>
-      <FullBackgroundHero imageSrc='/images/landing/kloeh-logo.jpg' />
+      <FullBackgroundHero
+        imageSrc='/images/landing/kloeh-logo.jpg'
+        wm={false}
+      />
       <BrandDescription
         logoSrc='/images/landing/kloeh-logo.png'
         paragraphs={[
