@@ -31,12 +31,12 @@ export default function HeroDesigner() {
       <div className='relative z-0 hidden flex-wrap justify-center gap-8 text-xl font-light tracking-widest text-gray-700 uppercase md:-mt-62 md:flex md:text-4xl'>
         <span>BRANDING</span>
         <span>WEB</span>
-        <span className='block px-28'></span>
-        <span className='ps-12'>PHOTOGRAPHY</span>
+        <span className='block px-24'></span>
+        <span className='ps-32'>PHOTOGRAPHY</span>
       </div>
 
       {/* Línea inferior */}
-      <div className='bg-dark-coffee -mt-4 h-10 min-w-full md:mt-46' />
+      <div className='bg-dark-coffee -mt-4 h-10 min-w-screen md:mt-46' />
     </section>
   )
 }

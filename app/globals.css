@@ -12,6 +12,28 @@
   --color-c3: #6c4603;
   --color-c4: #a66a00;
 }
+/* Paleta de colores personalizada como variables CSS globales */
+:root {
+  /* 🎨 paleta Kloeh */
+  --color-kp1: #be9988;
+  --color-kp2: #a6775b;
+  --color-kp3: #8d5c4a;
+  --color-kp4: #73403f;
+
+  /* 🎨 paleta Deleite */
+  --color-dp1: #3e0000;
+  --color-dp2: #801515;
+  --color-dp3: #af4949;
+  --color-dp4: #b0b0b0;
+  --color-dp5: #4f4f4f;
+
+  /* 🎨 paleta Deleite */
+  --color-lp1: #cdcfc4;
+  --color-lp2: #eacead;
+  --color-lp3: #dfa784;
+  --color-lp4: #f58e6f;
+  --color-lp5: #87a29d;
+}
 
 html {
   scroll-behavior: smooth;

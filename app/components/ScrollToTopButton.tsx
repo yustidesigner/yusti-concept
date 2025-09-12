@@ -23,7 +23,7 @@ export default function ScrollToTopButton() {
     <button
       onClick={scrollToTop}
       aria-label='Scroll to top'
-      className={`bg-dark-coffee hover:bg-c1 fixed right-6 bottom-6 z-50 rounded-full p-3 shadow-lg transition ${
+      className={`bg-dark-coffee fixed right-6 bottom-6 z-50 rounded-full p-3 shadow-lg transition hover:bg-black ${
         isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}
     >
