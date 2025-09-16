@@ -6,7 +6,7 @@ type ColorPaletteProps = {
 
 export default function ColorPalette({ colors }: ColorPaletteProps) {
   return (
-    <div className='flex justify-center gap-0 py-10'>
+    <div className='mb-32 flex justify-center gap-0 py-10'>
       {colors.map((color, i) => (
         <div
           key={i}

@@ -16,7 +16,7 @@ export default function Header() {
         {/* Logo */}
         <Link href='/'>
           <Image
-            src='/images/landing/logo-black.png'
+            src='/images/landing/logo-negro-2.png'
             alt='yusti-concept-logo'
             height={255}
             width={200}

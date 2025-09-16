@@ -10,7 +10,7 @@ export default function Kloeh() {
         wm={false}
       />
       <BrandDescription
-        logoSrc='/images/landing/kloeh-logo.png'
+        logoSrc='/images/landing/kloeh-01.png'
         paragraphs={[
           'El logotipo de Kloeh combina elegancia y carácter con una tipografía serif delgada que transmite poder y delicadeza. Un sutil juego en la letra "O" aporta un toque distintivo y moderno, sin perder la armonía del conjunto.',
           'La paleta en tonos tierra y acentos dorados refuerza la sensación de sofisticación, calidez y exclusividad, conectando con lo natural y lo atemporal.'

@@ -10,7 +10,7 @@ export default function FullBackgroundHero({
   wm: boolean
 }) {
   return (
-    <section className={`relative ${wm ? '' : '-mt-[96px]'} h-screen w-full`}>
+    <section className={`relative ${wm ? '' : '-mt-[200px]'} h-screen w-full`}>
       {/* Imagen de fondo */}
       <Image
         src={imageSrc}
