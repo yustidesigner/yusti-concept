@@ -3,11 +3,11 @@
 import Image from 'next/image'
 
 const images = [
-  '/images/landing/ff1.png',
-  '/images/landing/ff1.png',
-  '/images/landing/ff1.png',
-  '/images/landing/ff1.png',
-  '/images/landing/ff1.png'
+  '/images/croquetas/1.jpg',
+  '/images/croquetas/7.jpg',
+  '/images/croquetas/11.jpg',
+  '/images/croquetas/9.jpg',
+  '/images/croquetas/5.jpg'
 ]
 
 export default function DetailLoverSection() {
@@ -50,7 +50,7 @@ export default function DetailLoverSection() {
       </div>
 
       {/* Texto */}
-      <div className='mt-32 pt-6 pb-42 text-center'>
+      <div className='mt-64 pt-6 pb-42 text-center'>
         <h2 className='mb-3 text-3xl font-bold text-[#8C611C] md:text-6xl'>
           Amante de <br /> los detalles
         </h2>
