@@ -33,6 +33,12 @@
   --color-lp3: #dfa784;
   --color-lp4: #f58e6f;
   --color-lp5: #87a29d;
+
+  /* 🎨 paleta Deleite */
+  --color-np1: #c2b384;
+  --color-np2: #9f4d23;
+  --color-np3: #095a50;
+  --color-np4: #50827c;
 }
 
 html {
