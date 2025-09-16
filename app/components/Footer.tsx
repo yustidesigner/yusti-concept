@@ -9,7 +9,7 @@ export default function Footer() {
         <div className='flex justify-center md:justify-start'>
           <Link href='/'>
             <Image
-              src='/images/landing/logo-black-x2.png'
+              src='/images/landing/logo-negro-2.png'
               alt='Yusti Designer Logo'
               width={400}
               height={300}
