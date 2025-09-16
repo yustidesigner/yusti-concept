@@ -20,7 +20,7 @@ export default function Niria() {
       </section>
 
       <BrandDescription
-        logoSrc='/images/landing/logo-black-x2.png'
+        logoSrc='/images/landing/logo-negro-2.png'
         paragraphs={[
           'Diseñar la identidad visual de Niria Sojo Studio fue un ejercicio de equilibrio entre fuerza y sutileza. Como diseñadora de interiores, Niria buscaba una imagen que reflejara no solo su estilo refinado, sino también la determinación con la que transforma los espacios.',
           'El logotipo fue concebido como una expresión de lujo discreto: formas elegantes, tipografía con personalidad y detalles sutiles que evocan feminidad sin caer en clichés. La paleta de color se trabajó para resaltar el carácter sofisticado del estudio, con tonos sobrios y acentos cálidos que aportan cercanía y distinción.',
