@@ -9,6 +9,7 @@ import PhotographyCard from '@/components/PhotographyCard'
 import BrandsSection from '@/components/BrandsSection'
 import LatestProjects from '@/components/LatestProjects'
 import HeroDesigner from '@/components/HeroDesigner'
+import ServicesGrid from '@/components/ServicesGrid'
 
 export default function Page() {
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function Page() {
       <LatestProjects />
       <DetailLoverSection />
       <PhotographyCard />
+      <ServicesGrid />
     </main>
   )
 }
