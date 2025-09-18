@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react'
 import SoftSkills from '@/components/SoftSkills'
-import DemasiadoCuriosa from '@/components/DemasiadoCuriosa'
 import IntroCard from '@/components/IntroCard'
 import DetailLoverSection from '@/components/DetailLoverSection'
 import PhotographyCard from '@/components/PhotographyCard'
@@ -30,7 +29,6 @@ export default function Page() {
       <HeroDesigner />
       <BrandsSection />
       <IntroCard />
-      <DemasiadoCuriosa />
       <SoftSkills />
       <LatestProjects />
       <DetailLoverSection />
