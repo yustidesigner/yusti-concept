@@ -6,8 +6,11 @@ import Image from 'next/image'
 export default function Niria() {
   return (
     <>
-      <FullBackgroundHero imageSrc='/images/niria/niria.png' wm={false} />
-      {/* <FullBackgroundHero imageSrc='/images/niria/niria2.png' wm={true} /> */}
+      <FullBackgroundHero
+        imageSrc='/images/niria/niria.png'
+        wm={false}
+        alt='Niria logo con fondo oscuro'
+      />
       <section className='flex h-screen w-full items-center justify-center'>
         <Image
           src='/images/niria/niria2.png'

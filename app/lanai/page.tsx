@@ -5,8 +5,16 @@ import FullBackgroundHero from '@/components/FullBackgroundHero'
 export default function Lanai() {
   return (
     <>
-      <FullBackgroundHero imageSrc='/images/lanai/lanai.png' wm={false} />
-      <FullBackgroundHero imageSrc='/images/lanai/lanai2.png' wm={false} />
+      <FullBackgroundHero
+        imageSrc='/images/lanai/lanai.png'
+        wm={false}
+        alt='folio lanai logo'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/lanai/lanai2.png'
+        wm={true}
+        alt='skin care'
+      />
       <BrandDescription
         logoSrc='/images/lanai/lanai3.png'
         paragraphs={[

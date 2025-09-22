@@ -1,11 +1,14 @@
 import BrandDescription from '@/components/BrandDescription'
-import ColorPalette from '@/components/ColorPalette'
 import FullBackgroundHero from '@/components/FullBackgroundHero'
 
 export default function Binome() {
   return (
     <>
-      <FullBackgroundHero imageSrc='/images/binome/binome.png' wm={false} />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome.png'
+        wm={false}
+        alt='Logo binome, cadena y colgante.'
+      />
 
       <BrandDescription
         logoSrc='/images/landing/logo-negro-2.png'
@@ -14,12 +17,36 @@ export default function Binome() {
           'Trabajo con luz natural y composiciones limpias que reflejen su esencia: minimalismo, elegancia y autenticidad. Porque cada fotografía busca transmitir esa conexión profunda entre el objeto y quien lo elige, celebrando la belleza de lo hecho a mano y los vínculos que perduran.'
         ]}
       />
-      <FullBackgroundHero imageSrc='/images/binome/binome2.png' wm={true} />
-      <FullBackgroundHero imageSrc='/images/binome/binome3.png' wm={true} />
-      <FullBackgroundHero imageSrc='/images/binome/binome4.png' wm={true} />
-      <FullBackgroundHero imageSrc='/images/binome/binome5.png' wm={true} />
-      <FullBackgroundHero imageSrc='/images/binome/binome6.png' wm={true} />
-      <FullBackgroundHero imageSrc='/images/binome/binome7.png' wm={true} />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome2.png'
+        wm={true}
+        alt='Anillos binome'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome3.png'
+        wm={true}
+        alt='Anillo Binome'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome4.png'
+        wm={true}
+        alt='Cadena con pendiente escarabajo'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome5.png'
+        wm={true}
+        alt='Anillos raises'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome6.png'
+        wm={true}
+        alt='Pendiente corazon'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/binome/binome7.png'
+        wm={true}
+        alt='Anillo con diferente texturas'
+      />
     </>
   )
 }
