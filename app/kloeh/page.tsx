@@ -8,6 +8,7 @@ export default function Kloeh() {
       <FullBackgroundHero
         imageSrc='/images/landing/kloeh-logo.jpg'
         wm={false}
+        alt='Folio con logo de K'
       />
       <BrandDescription
         logoSrc='/images/landing/kloeh-01.png'

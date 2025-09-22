@@ -1,13 +1,20 @@
 import BrandDescription from '@/components/BrandDescription'
 import ColorPalette from '@/components/ColorPalette'
 import FullBackgroundHero from '@/components/FullBackgroundHero'
-import Image from 'next/image'
 
 export default function Deleite() {
   return (
     <>
-      <FullBackgroundHero imageSrc='/images/deleite/deleite.png' wm={false} />
-      <FullBackgroundHero imageSrc='/images/deleite/deleite2.png' wm={false} />
+      <FullBackgroundHero
+        imageSrc='/images/deleite/deleite.png'
+        wm={false}
+        alt='Deleite logo con fondo rojizo borroso'
+      />
+      <FullBackgroundHero
+        imageSrc='/images/deleite/deleite2.png'
+        wm={false}
+        alt='Deleite box'
+      />
       <BrandDescription
         logoSrc='/images/deleite/deleite3.png'
         paragraphs={[

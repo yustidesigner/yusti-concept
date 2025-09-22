@@ -12,7 +12,7 @@ export default function BrandDescription({
   paragraphs
 }: BrandDescriptionProps) {
   return (
-    <section className='flex flex-col items-center px-6 py-20 text-center'>
+    <section className='flex flex-col items-center px-6 py-64 text-center'>
       {/* Logo */}
       <div className='mb-4'>
         <Image

@@ -7,7 +7,7 @@ export default function PhotographyShowcase() {
   return (
     <section className='flex justify-center px-4 py-16'>
       {/* Marco degradado */}
-      <div className='w-full max-w-5xl rounded-[32px] bg-gradient-to-b from-[#3C2A1E] to-[#8C611C] p-1 shadow-xl'>
+      <div className='from-coffee to-dark-coffee w-full max-w-5xl rounded-[32px] bg-gradient-to-b p-1 shadow-xl'>
         {/* Contenido sobre fondo oscuro */}
         <div className='rounded-[31px] bg-[linear-gradient(180deg,#3C2A1E_0%,#8C611C_100%)] p-6 md:p-10'>
           {/* Título */}
@@ -20,7 +20,7 @@ export default function PhotographyShowcase() {
 
           {/* Borde blanco grueso + grilla */}
           <div className='mt-6 rounded-[22px] bg-white p-3 md:p-5'>
-            <div className='grid [grid-auto-rows:140px] grid-cols-2 gap-3 md:[grid-auto-rows:200px] md:gap-4'>
+            <div className='grid [grid-auto-rows:140px] grid-cols-1 gap-3 md:[grid-auto-rows:200px] md:grid-cols-2 md:gap-4'>
               {/* Izquierda alta (2 filas) */}
               <Tile
                 src='/images/landing/ff1.png'
@@ -32,7 +32,7 @@ export default function PhotographyShowcase() {
               <Tile src='/images/landing/ff2.png' alt='croquetas' />
 
               {/* Derecha medio */}
-              <Tile src='/images/landing/ff3.png' alt='capanes' />
+              <Tile src='/images/landing/ff3.png' alt='carpanes' />
 
               {/* Abajo izquierda */}
               <Tile src='/images/landing/ff4.png' alt='hi' />

@@ -43,7 +43,7 @@ export default function Footer() {
       <div className='text-dark-coffee mt-10 text-center text-xs'>
         ALL RIGHTS RESERVED
       </div>
-      <div className='mt-6 h-12 w-full bg-[#301E00]'></div>
+      <div className='bg-coffee mt-6 h-12 w-full'></div>
     </footer>
   )
 }
