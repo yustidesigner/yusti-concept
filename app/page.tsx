@@ -29,11 +29,11 @@ export default function Page() {
       <HeroDesigner />
       <BrandsSection />
       <IntroCard />
+      <ServicesGrid />
       <SoftSkills />
       <LatestProjects />
       <DetailLoverSection />
       <PhotographyCard />
-      <ServicesGrid />
     </main>
   )
 }

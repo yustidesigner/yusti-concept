@@ -1,8 +1,6 @@
 import BrandDescription from '@/components/BrandDescription'
 import CenterLogo from '@/components/CenterLogo'
 import FullBackgroundHero from '@/components/FullBackgroundHero'
-import SplitViewportImages from '@/components/SplitViewportImages'
-import TiltedIphone from '@/components/TiltedIphone'
 
 export default function Carpanes() {
   return (
