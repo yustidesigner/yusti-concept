@@ -8,35 +8,35 @@ import {
 const services = [
   {
     id: '01',
-    title: 'Creación de contenido para redes sociales',
-    description:
-      'Realizo fotografías y diseños pensados para redes, logrando un estilo visual atractivo, coherente y auténtico.',
-    color: 'bg-c1',
-    icon: <SwitchCamera size={40} />
-  },
-  {
-    id: '02',
-    title: 'Ilustración digital',
-    description:
-      'Dibujo ideas que conectan: desde detalles simples hasta composiciones creativas para dar un toque único a tus proyectos.',
-    color: 'bg-c2',
-    icon: <ChartColumnBig size={40} />
-  },
-  {
-    id: '03',
-    title: 'Diseño Web',
-    description:
-      'Diseño páginas claras y funcionales que combinan estética con una navegación sencilla y agradable.',
-    color: 'bg-c4',
-    icon: <HardDriveUpload size={40} />
-  },
-  {
-    id: '04',
     title: 'Identidad visual y branding',
     description:
       'Desarrollo todo lo necesario para que tu proyecto tenga una imagen sólida, coherente y con personalidad propia.',
-    color: 'bg-c3',
+    color: 'bg-twine',
     icon: <Aperture size={40} />
+  },
+  {
+    id: '02',
+    title: 'Diseño Web',
+    description:
+      'Diseño páginas claras y funcionales que combinan estética con una navegación sencilla y agradable.',
+    color: 'bg-c1',
+    icon: <HardDriveUpload size={40} />
+  },
+  {
+    id: '03',
+    title: 'Creación de contenido para redes sociales',
+    description:
+      'Realizo fotografías y diseños pensados para redes, logrando un estilo visual atractivo, coherente y auténtico.',
+    color: 'bg-c2',
+    icon: <SwitchCamera size={40} />
+  },
+  {
+    id: '04',
+    title: 'Ilustración digital',
+    description:
+      'Dibujo ideas que conectan: desde detalles simples hasta composiciones creativas para dar un toque único a tus proyectos.',
+    color: 'bg-c4',
+    icon: <ChartColumnBig size={40} />
   }
 ]
 
