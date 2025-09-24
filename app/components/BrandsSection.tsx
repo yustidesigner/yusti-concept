@@ -1,15 +1,24 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 const brands = [
-  { src: '/images/landing/fans-logo.png', alt: 'Fans Coffee & Bakery' },
-  { src: '/images/landing/hi-logo.png', alt: 'Hi! Bröd Coffee' },
-  { src: '/images/landing/lanai-logo.png', alt: 'Lanai' },
-  { src: '/images/landing/deleite-logo.png', alt: 'Deleite' },
-  { src: '/images/landing/kloeh-logo.png', alt: 'Kloeh' },
-  { src: '/images/landing/bou-logo.png', alt: 'Café Bou' },
-  { src: '/images/landing/panini-logo.png', alt: 'The Panini Café' }
+  {
+    src: '/images/landing/fans-logo.png',
+    alt: 'Fans Coffee & Bakery',
+    link: 'fans'
+  },
+  { src: '/images/landing/hi-logo.png', alt: 'Hi! Bröd Coffee', link: 'hi' },
+  { src: '/images/landing/lanai-logo.png', alt: 'Lanai', link: 'lanai' },
+  { src: '/images/landing/deleite-logo.png', alt: 'Deleite', link: 'deleite' },
+  { src: '/images/landing/kloeh-logo.png', alt: 'Kloeh', link: 'kloeh' },
+  { src: '/images/landing/bou-logo.png', alt: 'Café Bou', link: 'bou' },
+  {
+    src: '/images/landing/panini-logo.png',
+    alt: 'The Panini Café',
+    link: 'panini'
+  }
 ]
 
 export default function BrandsSection() {
@@ -38,12 +47,14 @@ export default function BrandsSection() {
             key={i}
             className='relative mx-auto h-12 w-28 transition hover:scale-130'
           >
-            <Image
-              src={brand.src}
-              alt={brand.alt}
-              fill
-              className='object-contain'
-            />
+            <Link href={brand.link}>
+              <Image
+                src={brand.src}
+                alt={brand.alt}
+                fill
+                className='object-contain'
+              />
+            </Link>
           </div>
         ))}
       </div>

@@ -14,25 +14,25 @@ export default function SoftSkills() {
 
       <div className='mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2'>
         <div className='flex flex-col space-y-6'>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Pensamiento estratégico
           </div>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Atención al detalle
           </div>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Adaptabilidad
           </div>
         </div>
 
         <div className='flex flex-col space-y-6'>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Pensamiento creativo
           </div>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Escucha activa
           </div>
-          <div className='bg-twine text-dark-coffee rounded-xl py-6 text-center text-xl font-medium'>
+          <div className='bg-twine text-dark-coffee hover:bg-c1 rounded-xl py-6 text-center text-xl font-medium'>
             Comunicación efectiva
           </div>
         </div>

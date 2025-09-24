@@ -18,7 +18,8 @@ export default function DetailLoverSection() {
 
   return (
     <section className='relative flex flex-col items-center justify-center overflow-hidden bg-white py-8'>
-      <div className='md: relative mb-32 hidden h-[300px] w-full max-w-6xl md:block'>
+      {/* Versión desktop: arco */}
+      <div className='relative mb-32 hidden h-[300px] w-full max-w-6xl md:block'>
         {images.map((src, i) => {
           const angleDeg =
             startAngle + ((endAngle - startAngle) / (total - 1.4)) * i
@@ -47,11 +48,29 @@ export default function DetailLoverSection() {
         })}
       </div>
 
-      <div className='mt-64 pt-6 pb-42 text-center'>
+      {/* Versión mobile: imágenes una debajo de otra */}
+      <div className='flex flex-col items-center gap-6 md:hidden'>
+        {images.map((src, i) => (
+          <div
+            key={i}
+            className='relative aspect-square w-90 overflow-hidden rounded-2xl shadow-md sm:w-56'
+          >
+            <Image
+              src={src}
+              alt={`detalle-mobile-${i}`}
+              fill
+              className='object-cover'
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Texto */}
+      <div className='mt-12 text-center md:mt-64 md:pt-6 md:pb-42'>
         <h2 className='text-c4 mb-3 text-3xl font-bold md:text-6xl'>
           Amante de <br /> los detalles
         </h2>
-        <p className='text-c4 mx-auto max-w-md text-left text-base md:text-xl'>
+        <p className='text-c4 mx-auto max-w-md text-center text-base md:text-xl'>
           Buscando siempre reflejar la <br /> esencia de cada marca
         </p>
       </div>
