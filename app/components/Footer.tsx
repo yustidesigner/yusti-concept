@@ -19,15 +19,20 @@ export default function Footer() {
         </div>
 
         {/* Info */}
-        <div className='justify-center text-center'>
-          <p>HELLO@YUSTICONCEPT.COM</p>
-          <p>+34 643 16 96 08</p>
+        <div className='justify-center space-y-1 text-center'>
+          <a href='mailto:hello@yusticoncept.com' className='hover:underline'>
+            hello@yusticoncept.com
+          </a>
+          <br />
+          <a href='tel:+34643169608' className='hover:underline'>
+            +34 643 16 96 08
+          </a>
           <p>MADRID</p>
         </div>
 
         {/* Enlaces */}
         <div className='flex flex-col space-y-1 text-center'>
-          <a href='/home' className='hover:underline'>
+          <a href='/' className='hover:underline'>
             HOME
           </a>
           <a href='/about' className='hover:underline'>
