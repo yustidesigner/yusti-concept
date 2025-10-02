@@ -11,6 +11,8 @@
   --color-c2: #e39a19;
   --color-c3: #6c4603;
   --color-c4: #a66a00;
+  --color-dp1: #3e0000;
+  --color-dp5: #4f4f4f;
 }
 /* Paleta de colores personalizada como variables CSS globales */
 :root {

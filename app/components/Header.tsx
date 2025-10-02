@@ -9,39 +9,56 @@ import { usePathname } from 'next/navigation'
 // Configuración de rutas → logo + color de letra
 const headerStyles: Record<
   string,
-  { logo: string; textColor: string; highlight: string }
+  { logo: string; textColor: string; highlight: string; mBgColor: string }
 > = {
   '/': {
     logo: '/images/landing/logo-negro-2.png',
     textColor: 'text-dark-coffee',
-    highlight: 'hover:text-amber-600'
+    highlight: 'hover:text-amber-600',
+    mBgColor: 'bg-transparent'
   },
   '/deleite': {
     logo: '/images/landing/logo-blanco-2.png',
     textColor: 'text-white',
-    highlight: 'hover:text-amber-300'
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-dp1'
+  },
+  '/fans': {
+    logo: '/images/landing/logo-negro-2.png',
+    textColor: 'text-dark-coffee',
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-twine'
   },
   '/lanai': {
     logo: '/images/landing/logo-blanco-2.png',
     textColor: 'text-white',
-    highlight: 'hover:text-amber-300'
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-c3'
   },
   '/niria': {
     logo: '/images/landing/logo-blanco-2.png',
     textColor: 'text-white',
-    highlight: 'hover:text-amber-300'
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-dp5'
   },
   '/croquetas': {
     logo: '/images/landing/logo-blanco-2.png',
     textColor: 'text-white',
-    highlight: 'hover:text-amber-300'
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-black'
   },
   '/carpanes': {
     logo: '/images/landing/logo-blanco-2.png',
     textColor: 'text-white',
-    highlight: 'hover:text-amber-300'
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-black'
+  },
+  '/binome': {
+    logo: '/images/landing/logo-negro-2.png',
+    textColor: 'text-dark-coffee',
+    highlight: 'hover:text-amber-300',
+    mBgColor: 'bg-white'
   }
-  // ➕ agrega aquí las rutas que necesites
 }
 
 export default function Header() {
@@ -52,7 +69,9 @@ export default function Header() {
   const currentStyle = headerStyles[pathname] ?? headerStyles['/'] // fallback al home si la ruta no está en la lista
 
   return (
-    <header className='relative z-10 w-full bg-transparent px-6 py-4 md:px-12'>
+    <header
+      className={`relative z-10 w-full ${isOpen ? currentStyle.mBgColor : 'bg-transparent'} px-6 py-4 md:px-1`}
+    >
       <div className='mx-auto flex max-w-7xl items-center justify-between'>
         {/* Logo dinámico */}
         <Link href='/'>
@@ -87,7 +106,9 @@ export default function Header() {
             Work
           </Link>
           <Link href='/#contact'>
-            <span className='bg-dark-coffee hover:bg-coffee rounded-xl px-6 py-2 text-white transition'>
+            <span
+              className={`bg-dark-coffee hover:bg-coffee rounded-xl px-6 py-2 text-white transition`}
+            >
               Contact
             </span>
           </Link>
@@ -105,7 +126,9 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <div className='mt-4 space-y-4 rounded-md bg-white px-6 py-4 text-center text-base font-light shadow-inner md:hidden'>
+        <div
+          className={`mt-4 space-y-4 rounded-md ${currentStyle.mBgColor} px-6 py-4 text-center text-base font-light shadow-inner md:hidden`}
+        >
           <Link
             href='/'
             className={`${currentStyle.textColor} block ${currentStyle.highlight} transition`}
